@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT WEBSITE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- <link rel="stylesheet" href="icons.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+
+
+    <style>
+        /* external css: flickity.css */
+
+* { 
+    box-sizing: border-box; 
+}
+
+/* body { 
+    font-family: sans-serif; 
+} */
+
+.carousel {
+  /* background: #EEE; */
+  /* background: linear-gradient(80deg,hsl(236,79%,11%),hsl(10,78%,9%)); */
+  height: 350px;
+}
+
+.carousel-cell {
+  /* width: 28%; */
+  width: 300px;
+  height: 300px;
+  margin-right: 50px;
+  background: #8C8;
+  border-radius: 10px;
+  counter-increment: carousel-cell;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+
+/* cell number */ 
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+} 
+
+    </style>
+</head>
+<body class="main">
+
+    <!-- header -->
+
+    <div class="navbar">
+
+        <div class="logo">
+            NFT WEBSITE
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About Us</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+                <li>
+                    <a href="">Sign In</a>
+                </li>
+                <li>
+                    <a href="">Products</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- center heading -->
+
+    <div class="heading">
+        <div class="head">
+           <center><h1>Explore, collect, and sell NFTs</h1></center> 
+        </div>
+    </div>
+
+
+
+    <!-- slider -->
+
+    <!-- Flickity HTML init -->
+    <div class="carousel" data-flickity='{ "autoplay": true }'>
+    
+        <!-- <div class="carousel-cell"><img
+            src="images/1.png" alt=""
+            height="200px" width="200px"></div> -->
+    
+        <img class="carousel-cell" src="images/1.png" alt="Monkey">
+        <img class="carousel-cell" src="images/2.webp" alt="Monkey">
+        <img class="carousel-cell" src="images/3.webp" alt="Monkey">
+        <img class="carousel-cell" src="images/4.jpg" alt="Monkey">
+        <img class="carousel-cell" src="images/5.png" alt="Monkey">
+        <img class="carousel-cell" src="images/6.jpg" alt="Monkey">
+        <img class="carousel-cell" src="images/7.webp" alt="Monkey">
+        <img class="carousel-cell" src="images/8.webp" alt="Monkey">
+        <img class="carousel-cell" src="images/9.webp" alt="Monkey">
+        <img class="carousel-cell" src="images/1.png" alt="Monkey">
+        <img class="carousel-cell" src="images/2.webp" alt="Monkey">
+        <img class="carousel-cell" src="images/3.webp" alt="Monkey">
+        <img class="carousel-cell" src="images/4.jpg" alt="Monkey">
+        <img class="carousel-cell" src="images/5.png" alt="Monkey">
+        <img class="carousel-cell" src="images/6.jpg" alt="Monkey">
+        <img class="carousel-cell" src="images/7.webp" alt="Monkey">
+        <img class="carousel-cell" src="images/8.webp" alt="Monkey">
+        <img class="carousel-cell" src="images/9.webp" alt="Monkey">
+    </div>
+
+
+
+    <!-- cards -->
+
+    <div class="parent">
+
+        <div class="heading1">
+            <div class="head1">
+               <center><h1>Top Trending</h1></center> 
+            </div>
+        </div>
+
+        <div class="parent1">
+               <!-- 1 -->
+    <div class="cards">
+
+        <div class="image">
+            <img src="images/1.png" alt="">
+        </div>
+
+        <div class="title">
+            <h2>Monkey</h2>
+            <a href="" style="color: black;margin-top: 18px;margin-right: 40px;font-size: 20px;"><i class="fa-solid fa-heart"></i></a>
+        </div>
+
+        <div class="des">
+            <p>Multiple colors Monkey</p>
+        </div>
+
+        <div class="price">
+            <h5>$199.00</h5>
+        </div>
+
+       <div class="btn">
+        <button>Buy</button>
+       </div>
+
+    </div>
+    
+
+    <!-- 2 -->
+    <div class="cards">
+
+        <div class="image">
+            <img src="images/2.webp" alt="">
+        </div>
+
+        <div class="title">
+            <h2>Donkey</h2>
+            <a href="" style="color: black;margin-top: 18px;margin-right: 40px;font-size: 20px;"><i class="fa-solid fa-heart"></i></a>
+        </div>
+
+        <div class="des">
+            <p>Multiple colors Donkey</p>
+        </div>
+
+        <div class="price">
+            <h5>$200.00</h5>
+        </div>
+
+       <div class="btn">
+        <button>Buy</button>
+       </div>
+
+    </div>
+
+    <!-- 3 -->
+    <div class="cards">
+
+        <div class="image">
+            <img src="images/3.webp" alt="">
+        </div>
+
+        <div class="title">
+            <h2>Monkey</h2>
+            <a href="" style="color: black;margin-top: 18px;margin-right: 40px;font-size: 20px;"><i class="fa-solid fa-heart"></i></a>
+        </div>
+
+        <div class="des">
+            <p>Multiple colors Monkey</p>
+        </div>
+
+        <div class="price">
+            <h5>$300.00</h5>
+        </div>
+
+       <div class="btn">
+        <button>Buy</button>
+       </div>
+
+    </div>
+        </div>
+
+
+     
+
+        <div class="parent2">
+            <!-- 4 -->
+    <div class="cards">
+
+        <div class="image">
+            <img src="images/4.jpg" alt="">
+        </div>
+
+        <div class="title">
+            <h2>Dollar Monkey</h2>
+            <a href="" style="color: black;margin-top: 18px;margin-right: 40px;font-size: 20px;"><i class="fa-solid fa-heart"></i></a>
+        </div>
+
+        <div class="des">
+            <p>Multiple colors Monkey</p>
+        </div>
+
+        <div class="price">
+            <h5>$100.00</h5>
+        </div>
+
+       <div class="btn">
+        <button>Buy</button>
+       </div>
+
+    </div>
+
+    <!-- 5 -->
+    <div class="cards">
+
+        <div class="image">
+            <img src="images/5.png" alt="">
+        </div>
+
+        <div class="title">
+            <h2>Rainbow Boy</h2>
+            <a href="" style="color: black;margin-top: 18px;margin-right: 40px;font-size: 20px;"><i class="fa-solid fa-heart"></i></a>
+        </div>
+
+        <div class="des">
+            <p>Seven colors of raonbow</p>
+        </div>
+
+        <div class="price">
+            <h5>$500.00</h5>
+        </div>
+
+       <div class="btn">
+        <button>Buy</button>
+       </div>
+
+    </div>
+
+    <!-- 6 -->
+
+    <div class="cards">
+
+        <div class="image">
+            <img src="images/6.jpg" alt="">
+        </div>
+
+        <div class="title">
+            <h2>IT Boy</h2>
+            <a href="" style="color: black;margin-top: 18px;margin-right: 40px;font-size: 20px;"><i class="fa-solid fa-heart"></i></a>
+        </div>
+
+        <div class="des">
+            <p>Boy</p>
+        </div>
+
+        <div class="price">
+            <h5>$600.00</h5>
+        </div>
+
+       <div class="btn">
+        <button>Buy</button>
+       </div>
+
+    </div>
+
+        </div>
+
+
+        <div class="parent3">
+            <!-- 7 -->
+            <div class="cards">
+
+                <div class="image">
+                    <img src="images/7.webp" alt="">
+                </div>
+        
+                <div class="title">
+                    <h2>Lion</h2>
+                    <a href="" style="color: black;margin-top: 18px;margin-right: 40px;font-size: 20px;"><i class="fa-solid fa-heart"></i></a>
+                </div>
+        
+                <div class="des">
+                    <p>King in the jungle</p>
+                </div>
+        
+                <div class="price">
+                    <h5>$150.00</h5>
+                </div>
+        
+               <div class="btn">
+                <button>Buy</button>
+               </div>
+        
+            </div>
+
+            <!-- 8 -->
+
+            <div class="cards">
+
+                <div class="image">
+                    <img src="images/8.webp" alt="">
+                </div>
+        
+                <div class="title">
+                    <h2>Tiger</h2>
+                    <a href="" style="color: black;margin-top: 18px;margin-right: 40px;font-size: 20px;"><i class="fa-solid fa-heart"></i></a>
+                </div>
+        
+                <div class="des">
+                    <p>Run Fast</p>
+                </div>
+        
+                <div class="price">
+                    <h5>$800.00</h5>
+                </div>
+        
+               <div class="btn">
+                <button>Buy</button>
+               </div>
+        
+            </div>
+
+            <!-- 9 -->
+
+            <div class="cards">
+
+                <div class="image">
+                    <img src="images/9.webp" alt="">
+                </div>
+        
+                <div class="title">
+                    <h2>Fox</h2>
+                    <a href="" style="color: black;margin-top: 18px;margin-right: 40px;font-size: 20px;"><i class="fa-solid fa-heart"></i></a>
+                </div>
+        
+                <div class="des">
+                    <p>Scary Foxy</p>
+                </div>
+        
+                <div class="price">
+                    <h5>$350.00</h5>
+                </div>
+        
+               <div class="btn">
+                <button>Buy</button>
+               </div>
+        
+            </div>
+        </div>
+    
+
+</div>
+
+
+
+<!-- footer -->
+
+<footer>
+    <div class="foot">
+
+        <div class="logos">
+            NFT WEBSITE
+            <div class="sub" style="margin-top: 20px;">
+                <p>Lorem ipsum Veritatis!</p>
+            </div>
+        </div>
+
+        <div class="office">
+            OFFICE
+            <div class="address" style="margin-top: 20px;">
+                ABC road <br>
+                XYZ Town Sindh <br>
+                Karachi PQR colony E/1234 Pakistan
+            </div>
+            <div class="mail" style="margin-top: 20px;">
+                <i class="fa-solid fa-envelope"></i>  abchomer132@gmail.com
+            </div>
+            <div class="number" style="margin-top: 20px;">
+                <i class="fa-solid fa-phone"></i> +12 - 345678910
+            </div>
+        </div>
+
+        <div class="links">
+            LINKS
+
+            <div class="oyee">
+                <ul style="margin-top: 20px; margin-bottom: 20px;">
+                    <li>
+                        <a href="" style="color: white;">Home</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="" style="color: white;">About Us</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="" style="color: white;">Contact</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="" style="color: white;">Sign In</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="" style="color: white;">Products</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="social">
+            SOCIAL MEDIA CONTACTS
+           <div style="font-size: xx-large;margin-top: 20px;" class="media">
+            <div class="face"><i class="fa-brands fa-facebook"></i></div>
+            <div class="linked"><i class="fa-brands fa-linkedin"></i></div>
+            <div class="insta"><i class="fa-brands fa-instagram"></i></div>
+            <div class="twit"><i class="fa-brands fa-twitter"></i></div>
+           </div>
+        </div>
+
+    </div>
+
+   <div class="line">
+    <hr>
+    <p class="copyright">FASAHAT NAJEEB © 2023 - All Rights Reserved</p>
+   </div>
+</footer>
+
+
+
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+
+</body>
+</html>

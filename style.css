@@ -1,0 +1,261 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+/* header */
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    /* background-color: black; */
+    background: linear-gradient(80deg,hsl(236,79%,11%),hsl(10,78%,9%));
+    align-items: center;
+}
+
+.logo{
+    padding: 20px;
+    color: white;
+    font-size:x-large;
+    font-weight:bold ;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li a{
+    color: white;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav ul li{
+    margin:0px 50px;
+}
+
+.nav ul li a:hover{
+    color: red;
+}
+
+.main{
+    /* background-color: darkblue; */
+    /* background: linear-gradient(80deg,hsl(236,79%,11%),hsl(10,78%,9%)); */
+    /* background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%); */
+    background: #13274F;
+}
+
+
+/* heading */
+
+.head{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+}
+
+/* cards */
+
+.cards{
+    border: 2px solid black;
+    width: 300px;
+    margin: 20px;
+    border-radius: 20px;
+    background: #13274F;
+    overflow: hidden;
+}
+
+.cards:hover{
+    /* box-shadow: rgb(1, 1, 72) 0px 7px 29px 0px; */
+    box-shadow: rgb(0, 0, 255) 0px 3px 6px, rgb(47, 0, 255) 0px 3px 6px;
+}
+
+.image img{
+    width: 100%;
+    
+    
+   
+}
+
+.image img:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+   
+}
+
+.image:hover{
+    overflow: hidden;
+}
+
+.title h2{
+    text-align: left;
+    color: white;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.des p{
+    text-align: left;
+    color: white;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.price h5{
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn{
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.btn button{
+    border: 2px solid rgb(173, 172, 172);
+    outline: none;
+    font-size: 24px;
+    /* background-color: darkgray; */
+    background: #13274F;
+    color: rgb(173, 172, 172);
+    padding: 10px;
+    border-radius: 30px;
+    width: 100px;
+    
+}
+
+button:hover{
+    /* background-color: yellow; */
+    background: #fd5c63;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.parent{
+    /* display: flex; */
+    /* background-color: black; */
+    /* background-color: rgb(64, 64, 64); */
+    background: linear-gradient(80deg,hsl(10,78%,9%),hsl(236,79%,11%));
+    border-radius: 40px;
+    margin-top: 50px;
+    
+}
+
+.parent:hover{
+    /* box-shadow: rgb(248, 3, 3) 0px 5px 15px; */
+    /* box-shadow: rgb(250, 4, 4) 0px 54px 55px, rgb(243, 7, 7) 0px -12px 30px, rgb(243, 6, 6) 0px 4px 6px, rgb(245, 4, 4) 0px 12px 13px, rgb(242, 3, 3) 0px -3px 5px; */
+    /* box-shadow: rgb(250, 4, 4) 0px -12px 30px, rgb(243, 7, 7) 0px -12px 30px */
+    /* box-shadow: rgb(251, 3, 3) 0px 5px 15px; */
+    box-shadow: rgb(252, 0, 0) 0px 10px 36px 0px, rgb(252, 0, 0) 0px 0px 0px 1px;
+}
+
+.parent1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.parent2{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.parent3{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.head1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    font-size: larger;
+}
+
+
+
+/* footer */
+
+.foot{
+    /* background-color: black; */
+    background: linear-gradient(80deg,hsl(236,79%,11%),hsl(10,78%,9%));
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    border-top-left-radius: 100px;
+}
+
+.logos{
+    color: white;
+    margin-top: 50px;
+}
+
+.office{
+    color: white;
+    margin-top: 50px;
+}
+
+.links{
+    color: white;
+    margin-top: 50px;
+}
+
+.social{
+    color: white;
+    margin-top: 50px;
+}
+
+.face:hover{
+    color: blue;
+    cursor: pointer;
+}
+.linked:hover{
+    color: blue;
+    cursor: pointer;
+}
+.insta:hover{
+    color: rgb(255, 4, 46);
+    cursor: pointer;
+}
+.twit:hover{
+    color: darkcyan;
+    cursor: pointer;
+}
+.media{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.line{
+    background: linear-gradient(80deg,hsl(236,79%,11%),hsl(10,78%,9%));
+}
+.copyright{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+hr{
+    margin-left: 100px;
+    margin-right: 100px;
+}
